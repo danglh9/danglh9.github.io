@@ -1,0 +1,69 @@
+
+
+
+<html lang = "en"> 
+	<head> 
+		<meta charset = "utf-8" /> 
+	</head>
+	<style>
+		
+		body { 
+		background: #eee; 
+		padding: 5% 0; 
+		} 
+		
+		video { 
+		background: black; 
+		border: 1px solid gray; 
+		}
+		
+		.call-page { 
+		position: relative; 
+		display: block; 
+		margin: 0 auto; 
+		width: 500px; 
+		height: 500px; 
+		} 
+		
+		#localVideo { 
+		width: 450px; 
+		height: 450px; 
+		position: absolute; 
+		top: 15px; 
+		right: 15px; 
+		}
+		
+		#remoteVideo { 
+		width: 500px; 
+		height: 500px; 
+		}
+		
+	</style>
+	<body> 
+		
+		<div> 
+			<button id = "btnGetMediaUser">Truy cập webcam</button> 
+		</div>  
+		
+		<div> 
+			<input type = "text" id = "loginInput" /> 
+			<button id = "loginBtn">Đăng nhập</button> 
+		</div> 
+		
+		<div> 
+			<input type = "text" id = "otherUsernameInput" />
+			<button id = "joinRoom">Vào phòng</button> 
+		</div> 
+		<script src='node_modules\socket.io-client\dist\socket.io.js'></script>
+		<script src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+		<div id ='div_video'> 
+			<video id = "localVideo" autoplay></video> 
+		</div>
+		<script src='socket_client_group.js'></script>
+		
+		
+		
+		
+	</body>
+	
+</html>
