@@ -9,7 +9,7 @@ var localVideo = document.querySelector('#localVideo');
 var remoteVideo = document.querySelector('#remoteVideo');
 
 //var socket =  io.connect('https://vivulive.com:9092');
-var socket = io.connect('https://vivulive.com', {secure: true, port: 9092});
+var socket = io.connect('https://vivulive.com:9092', {secure: true, rejectUnauthorized: false});
 btnStream.disabled = true;
 btnView.disabled = true;
 
