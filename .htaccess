@@ -1,1 +1,1 @@
-AddType 'content/type' application/vnd.apple.mpegurl
+AddType application/vnd.apple.mpegurl .extension
