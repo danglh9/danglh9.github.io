@@ -1,1 +1,1 @@
-AddType application/vnd.apple.mpegurl .extension
+AddType application/vnd.apple.mpegurl .m3u8
